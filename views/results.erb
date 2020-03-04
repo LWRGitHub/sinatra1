@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>This is the contents of the database, as returned by a select statment.</p>
+        <% @my_array.each do |row| %>
+            <% row.each do |att| + '|' %>
+                <%= att %>
+            <% end %>
+            <br>
+        <% end %>
+    </body>
+</html>

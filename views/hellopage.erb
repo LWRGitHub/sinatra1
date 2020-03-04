@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>Hello</p>
+        <%= t = Time.now %>
+        <% if t.sec % 2 == 0 %>
+        <p>The number of seconds is enven.</p>
+        <% else %>
+        <p>The number of seconds is odd.</p>
+        <% end %>
+        <% t.sec.times do %>
+        x
+        <% end %>
+        <% if @name != nil %>
+        <p>Hello <%= @name %>!</p>
+        <% end %>
+    </body>
+</html>

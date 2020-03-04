@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloder'
+require 'sinatra/reloader'
 
 get '/' do
     @name = params[:name]
